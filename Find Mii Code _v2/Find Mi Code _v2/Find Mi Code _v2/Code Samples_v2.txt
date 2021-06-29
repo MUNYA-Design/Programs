@@ -1,0 +1,214 @@
+<VB_code> Text Files
+'Code to search from .txt file line by line | Show first result else move to next else stop operation
+		Dim txtCode As IO.StreamReader
+		Dim ssLine As String
+		rchOut.Clear()
+		'First, Open the file
+		txtCode = New IO.StreamReader("C:\Users\munya\Documents\Richfield BSc IT\Practical\VB Coding\Find Mii Code\Find Mii Code\Code Samples.txt")
+		'Read from text file | format text
+		Do Until txtCode.Peek = -1
+			ssLine = txtCode.ReadLine()
+			rchOut.Text = rchOut.Text & vbNewLine & Trim(ssLine)
+		Loop
+		'//Close the file
+		txtCode.Close()
+
+<VB_code> Select Case (case of...)
+Select Case Inches
+Case 62
+	Weight = “118-129”
+Case 63
+	Weight = “121-133”
+Case 64..Case 76
+	Weight = “172-190”
+End Select
+
+<VB_code> Dim number1 As Integer //Create a variable with Integer DataType
+
+<VB_code> Square root function
+Dim result1 As Double = Math.Sqrt(1)
+
+With lstDisplaty.Items
+.Add(result1)
+End with
+
+<VB_code> Math.Round  //123.45 = 123
+- AwayFromZero: With a positive number,  this option  will round  up—so  123.45 becomes 123.5.
+= ToEven: This will round  to  an  even  number—so  123.45  becomes  123.4  because 4 is an  even number  and 5 is not. 
+
+Dim after1 As Double  = Math.Round(before,  1, _MidpointRounding.AwayFromZero) //Second field is the decimal place you want to round off to, '0' is the default value
+Dim after2 As Double  = Math.Round(before,  1, _ MidpointRounding.ToEven)
+Dim after3 As Double  = Math.Round(before) //no options
+
+
+<VB_code> Sub procedures or Subs
+
+Sub ProcedureName()
+	//code come here
+End Sub   
+
+Sub ProcedureName(Argument)
+//Code comes here
+End Sub
+
+
+<VB_code> Functions: Returns a result **Must declare result
+
+[AccessSpecifier 'Default is Public'] Function FunctionName  ([Parameterlist]) As Datatype
+Statements
+Return expression
+End Function
+
+Private Function Sum(ByValsngNum1  As Single, ByValsngNum2 As Single) As Single
+Dim sngResult As Singlesng
+Result = sngNum1 + sngNum2
+Return sngResult
+
+Function CalculatePayroll(strName As String) As Double
+//Code comes here
+Function  Sub
+
+<VB_code> Tabs in rich Edit
+
+		'Create tabs In Rich Text Box #######################
+		rchDDB.SelectAll() 'code by @Martin {Stack-overload}
+		rchDDB.SelectionTabs = New Integer() {60}
+		rchDDB.AcceptsTab = True
+		rchDDB.Select(0, 0)
+
+		'rich-edit-code by @Martin {Stack-overload}
+		rchDDB.Clear()
+		rchSYD.Clear()
+
+		rchDDB.Text = "Year" & vbTab & "Depreciation"
+		
+		rchDDB.AppendText(vbNewLine + (iPeriod & vbTab & DDB))
+		
+<VB_code> Arrays
+Dim A(5) As Double  //with a subscript range of 0 to 5
+Dim Student(50) As String
+Dim Balance() As Decimal
+
+Student(0) = “Angela Allen”
+MsgBox(“The first student in the array is “ & Student(0))
+
+DIM N As Integer
+N = 5
+Amount(N) = 100  //assigning value to variable array index
+
+For I = 0 to 50  //List Student(0) Through Student(50)
+Console.WriteLine(Student(I))
+Next I
+
+<VB_code> Dynamic Arrays (change array size anytime)
+ReDim A(10) ReDim Employees(EmployeeCount)ReDim Holder(3 * N)ReDim Balance(2000), Amount(CustomerCount -1)
+
+Dim A() As Integer = {12, 24, 36}
+
+Dim I As Integer
+Dim N As Integer
+Dim B() As Integer
+N = 5
+B = New Integer() {3, N, 5}
+For I = 0 To 2
+Console.WriteLine(B(I))
+Next I
+
+Function Sum(A() As Double) As Double
+//statements
+End Function
+Total = Sum(Salary)  //No brackets
+
+Function Sequence(N As Integer) As Integer()  //Returning an Integer, note last pair of brackets
+
+//The max of an array
+For I = 0 To UBound(A)
+Total = Total + A(I)
+Next I
+
+<VB_code> String Manipulation
+
+//InStr Find pos of string in string
+Public Function InStr (StartPos As Integer, String1 As String, String2 As String, Optional Compare As CompareMethod = Microsoft.VisualBasic.CompareMethod.Binary) As Integer
+
+- StartPos: Optional. Refers to start pos/ Default = 1
+- String1: String being searched
+- String2: String to be searched
+- CompareMethod: Type of comparison: ('CompareMethod.Text omits Upper/Lower Case | 'CompareMethod.Binary considers the Case')
+
+
+//Returns a string with a specified number of strings starting left
+Public Function Left(str AS String, Length AS Integer) As String [use 'Right()' to start from the right]
+
+- str: Where to get the strings to return
+- Length: How many strings to return
+
+//Return a string with no leading or trailing spaces
+Public Function Trim(str As String)
+
+//Return a string with no trailing spaces
+Public Function LTrim(str As String)
+
+//Return a string with no leading spaces
+Public Function RTrim(str As String)
+
+//Return a string starting from a specified position in a string
+Public Function Mid(str As String, Start As Integer, iEnd As Integer) As Integer
+
+//Convert Strings to Uppercase/Lowercase/Propercase
+eg. NewString = StrCinv(OldString, VbStrConv.ProperCase) //Every first letter of every word to Uppcase
+eg. NewString = StrConv(OldString, VbStrConv.Lowercase)
+eg. NewString = StrConv(OldString, VbStrConv.Uppercase)
+
+//Returns string with a specified number of spcaces
+Public Function Space(Number As Integer) As String
+eg. testString = "Hello" & Space(10) & "World"
+
+//Format OutPut
+Dim testDateTime As Date = #1/27/2001 5:04:23 PM#
+Dim testStr As String
+' Returns current system time in the system-defined long time format.
+testStr = Format(Now(), "Long Time")
+' Returns current system date in the system-defined long date format.
+testStr = Format(Now(), "Long Date")
+' Also returns current system date in the system-defined long date
+' format, using the single letter code for the format.
+testStr = Format(Now(), "D")
+
+' Returns the value of testDateTime in user-defined date/time formats.
+' Returns "5:4:23".
+testStr = Format(testDateTime, "h:m:s")
+' Returns "05:04:23 PM".
+testStr = Format(testDateTime, "hh:mm:ss tt")
+' Returns "Saturday, Jan 27 2001".
+testStr = Format(testDateTime, "dddd, MMM d yyyy")
+' Returns "17:04:23".
+testStr = Format(testDateTime, "HH:mm:ss")
+' Returns "23".
+testStr = Format(23)
+
+' User-defined numeric formats.
+' Returns "5,459.40".
+testStr = Format(5459.4, "##,##0.00")
+' Returns "334.90".
+testStr = Format(334.9, "###0.00")
+' Returns "500.00%".
+testStr = Format(5, "0.00%")
+
+
+<vb_code> Combobox
+
+//Get Selected Value
+Dim intHeight As Double
+Dim intLength As Double
+Dim intWidth As Double
+Dim intRollCvrg As Double
+
+'Initialize Vars'
+intHeight = cmbHeight.SelectedItem
+intLength = cmbLength.SelectedItem
+intWidth = cmbWidth.SelectedItem
+intRollCvrg = cmbRollCvrg.SelectedItem
+
+//Select a value using code
+cmbRollCvrg.SelectedIndex = -1
