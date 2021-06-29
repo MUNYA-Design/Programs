@@ -1,0 +1,12 @@
+C:\Users\munya\source\repos\Dodger\Dodger\bin\Debug\Dodger.exe.config
+C:\Users\munya\source\repos\Dodger\Dodger\bin\Debug\Dodger.exe
+C:\Users\munya\source\repos\Dodger\Dodger\bin\Debug\Dodger.pdb
+C:\Users\munya\source\repos\Dodger\Dodger\bin\Debug\Dodger.xml
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.vbproj.AssemblyReference.cache
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.frmDodgerTheGame.resources
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.Resources.resources
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.vbproj.GenerateResource.cache
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.vbproj.CoreCompileInputs.cache
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.exe
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.xml
+C:\Users\munya\source\repos\Dodger\Dodger\obj\Debug\Dodger.pdb

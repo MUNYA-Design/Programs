@@ -1,0 +1,11 @@
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\bin\Debug\calculatorAPP.exe.config
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\bin\Debug\calculatorAPP.exe
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\bin\Debug\calculatorAPP.pdb
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\bin\Debug\calculatorAPP.xml
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.vbproj.AssemblyReference.cache
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.Resources.resources
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.vbproj.GenerateResource.cache
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.vbproj.CoreCompileInputs.cache
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.exe
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.xml
+C:\Users\munya\source\repos\calculatorAPP\calculatorAPP\obj\Debug\calculatorAPP.pdb
