@@ -1,10 +1,13 @@
 # Munya-Marinda/Visual-Basic
-This repository contains all working projects I completed whilst learning how to code in Visual Basic.
-Below is each projects explained.
+> This repository contains all working projects I completed whilst learning how to code in Visual Basic.
+> Below is each projects explained.
 
 ![1_dodger_startgame](https://user-images.githubusercontent.com/84540577/174471936-3cc8d63d-8c20-4e37-b9ba-0f91c4737b6d.png)
+
 ![3_dodger_levelone](https://user-images.githubusercontent.com/84540577/174471941-77b54c0d-26c3-40c2-b2d1-139ecdec4e9e.png)
+
 ![4_dodger_gameover](https://user-images.githubusercontent.com/84540577/174471945-d1ec8c78-64d8-44f2-a5ef-b8427fb6d34d.png)
+
 ![5_dodger_gamewon](https://user-images.githubusercontent.com/84540577/174471948-e661ccd1-3cd5-494b-965e-3e38eeb5f754.png)
 
 
@@ -16,15 +19,15 @@ Below is each projects explained.
 - Cateogory: Game, Arcade
 - Description: Similar to Snow Bros, Dodger is an arcade game that requires the user to navigate up multiple floors filled with their own sets of moving enemies and obstacles. To win the game, the user has to start at the bottom-left of the screen and work their way up to the top-right.
 
-What I learnt:
-- I designed my own game assets. (background, terrain, player-avatar, enemie-avatar, buttons, animations)
-- How to split different game objects into classes for better management.
-- Intense use of timers to manage the game.
-- I used a classes to manage the state the of different game objects:
-  - Class "Player" : Dodger/Classes/Players.vb
-  - Class "Terrain" : Dodger/Classes/GameTerrain.vb
-  - Class "EnemyBlock" : Dodger/Classes/Enemies.vb
-- Created a custom module with methods "sprmsg()" - to show me debugging values in better way; and "Showpos()" - to show me the postion of any object I pass an argument.
+- What I learnt:
+  - I designed my own game assets. (background, terrain, player-avatar, enemie-avatar, buttons, animations)
+  - How to split different game objects into classes for better management.
+  - Intense use of timers to manage the game.
+  - I used a classes to manage the state the of different game objects:
+   - Class "Player" : Dodger/Classes/Players.vb
+   - Class "Terrain" : Dodger/Classes/GameTerrain.vb
+   - Class "EnemyBlock" : Dodger/Classes/Enemies.vb
+  - Created a custom module with methods "sprmsg()" - to show me debugging values in better way; and "Showpos()" - to show me the postion of any object I pass an argument.
 
 - Biggest Challenge:
   - The mathematical equations that were needed to simulate a "jump" movement that slows down over a certain period of time and then accelerates down once that period of time has expired. I used an array of values that represents the full motion of "up-top-down", something like [-1,-2,0,0,0,+4,+4,+4] ... I wouldn't go into detail but image it being [going up, slowing down, coming down]
@@ -83,5 +86,5 @@ What I learnt:
     - Prints all of the prime numbers until 'n' where 'n' is the max provided by the users.
     - Returns the largest numbers of 'n' numbers.
 
--What I learnt:
+- What I learnt:
   - Maths methods like .ceil, .floor, .sqrt, .round, etc.
